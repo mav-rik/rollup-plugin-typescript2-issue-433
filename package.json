@@ -1,0 +1,32 @@
+{
+  "name": "rollup-plugin-typescript2-issue-433",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./scripts/build-watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mav-rik/rollup-plugin-typescript2-issue-433.git"
+  },
+  "author": "Artem Maltsev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mav-rik/rollup-plugin-typescript2-issue-433/issues"
+  },
+  "homepage": "https://github.com/mav-rik/rollup-plugin-typescript2-issue-433#readme",
+  "devDependencies": {
+    "@prostojs/dye": "^0.3.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "rollup": "^3.10.0",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "rollup-plugin-vue": "^6.0.0",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "vue": "^3.2.45"
+  }
+}
