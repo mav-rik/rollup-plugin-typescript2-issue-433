@@ -6,6 +6,10 @@ When running rollup.watch (programmatically) only the first build goes well. All
 
 Same for .vue files. When using <script setup lang="ts"> - it doesn't get updates after re-builds. When using <script setup> - works fine. But I guess there is a single cause for both.
 
+### Update:
+When `rollup-plugin-typescript2` plugin option `check` is set to `false` both (ts and vue) files fail to update.
+When `rollup-plugin-typescript2` plugin option `check` is set to `true` only vue file fails to update.
+
 # run repro
 
 `npm i`
