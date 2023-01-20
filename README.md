@@ -20,4 +20,8 @@ When `rollup-plugin-typescript2` plugin option `check` is set to `true` only vue
 1. `npm run start`
 2. first build goes well, you can see in console and in ./dist folder that it's fine
 3. change something in one of the files `src/test.js`, `src/index.ts` or `src/app.vue`
-4. check the re-build code: TS files don't update.
+4. check the re-build code: TS (and .vue with `lang="ts"`) files don't update
+5. switch `check` to `true` in plugin config `scripts/build-watch.js`
+6. stop running and perform step 1
+7. perform step 3
+8. now index.ts file gets an updates on each re-build, but vue file still gets the first version
