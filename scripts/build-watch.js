@@ -15,7 +15,7 @@ async function run() {
     const opts = {
         input: './src/index.ts',
         output: {
-            file: './dist/indes.js',
+            file: './dist/index.js',
         },
         external: [
             'vue',
@@ -46,7 +46,7 @@ async function run() {
         if (data.code === 'BUNDLE_END') {
             out.step('-- bundle ended\n')
             const { output } = await data.result.generate(opts.output)
-            
+
             // logging the files content just to see the changes right in the console
             console.log(
                 Object.entries(output[0].modules)
@@ -58,7 +58,7 @@ async function run() {
             // writting to FS also writing cached transpiled code
             await data.result.write(opts.output)
             await data.result.close()
-        }        
+        }
     })
 }
 
